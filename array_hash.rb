@@ -22,7 +22,7 @@ friend[:hair_color] = "blue"
 # Question 4
 # Write code to retrieve the index of 'dog' in the pet array.
 
-dog[1]
+pets[1]
 
 # Question 5
 # Write code to change the value of :favorite_food in the friend array to 'sushi'
