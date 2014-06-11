@@ -5,18 +5,24 @@
 # On a new line, write code to insert the value `snake` at the end of the pets array. Don't modify the original array creation line.
 
 pets = ['cat', 'dog']
-pets.last = 'snake'
+# incorrect pets.last = 'snake'
+pets.push('snake')
+pets << 'snake'
+pets += ['snake']
 
 # Question 2
 # Write code to return the value of the key :age in the friend hash
 
 friend = {name: "Chris", favorite_food: "Pizza", age: 27}
+
 friend[:age]
+#other answers: friend.fetch(:age)
 
 # Question 3
 # Add a key of :hair_color with a value of "blue" to the friend array
 
-friend << (:hair_color => "blue")
+#incorrect friend << (:hair_color => "blue")
+friend[:haircolor] = 'blue'
 
 # Question 4
 # Write code to retrieve the index of 'dog' in the pet array.
