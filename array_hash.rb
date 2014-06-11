@@ -16,7 +16,7 @@ friend[:age]
 
 # Question 3
 # Add a key of :hair_color with a value of "blue" to the friend array
-friend[:hair_color] = 'name'
+friend[:hair_color] = 'blue'
 
 # Question 4
 # Write code to retrieve the index of 'dog' in the pet array.
