@@ -3,7 +3,7 @@ require_relative '../lib/array_hash'
 
 RSpec.describe 'append_to_array' do
   it 'inserts a new value at the end of the array without altering the original array' do
-    expect(append_to_array('sname')).to eq ['cat','dog','snake']
+    expect(append_to_array('snake')).to eq ['cat','dog','snake']
   end
 end
 
