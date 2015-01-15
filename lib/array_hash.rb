@@ -15,22 +15,24 @@ end
 # Write code to return the value of the passed-in key from the friend hash.
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  return friend[:age]
+  friend[key]
+  #friend[key]
 end
 
 # Question 3
 # Add a key and value to the friend hash.
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  friend[:hair_color] = "blue"
+  friend[key] = value
   return friend
+  #friend[key]= value
 end
 
 # Question 4
 # Write code to retrieve the index of an element in the pet array.
 def find_index_of_array(value)
   pets = ['cat', 'dog']
-  pets.index("dog")
+  pets.index(value)
 end
 
 
@@ -39,6 +41,6 @@ end
 # value.
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  friend[:favorite_food] = "sushi"
+  friend[key] = value
   return friend
 end
