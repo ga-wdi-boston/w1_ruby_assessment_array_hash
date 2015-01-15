@@ -8,6 +8,7 @@
 # Don't modify the original array creation line.
 def append_to_array(value)
   pets = ['cat', 'dog']
+  pets << value
   # your answer here
 end
 
@@ -16,13 +17,15 @@ end
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key]
 end
 
 # Question 3
 # Add a key and value to the friend hash.
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  # your answer here
+  friend.store(key, value)
+  friend
 end
 
 # Question 4
@@ -30,6 +33,7 @@ end
 def find_index_of_array(value)
   pets = ['cat', 'dog']
   # your answer here
+  pets.index(value)
 end
 
 
@@ -39,4 +43,6 @@ end
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key] = value
+  friend
 end
