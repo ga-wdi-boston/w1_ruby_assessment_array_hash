@@ -8,28 +8,29 @@
 # Don't modify the original array creation line.
 def append_to_array(value)
   pets = ['cat', 'dog']
-  # your answer here
+  pets << value
 end
 
 # Question 2
 # Write code to return the value of the passed-in key from the friend hash.
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  # your answer here
+  friend[key]
 end
 
 # Question 3
 # Add a key and value to the friend hash.
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  # your answer here
-end
+  friend[key] = value
+  friend
+end # At first, forgot to account for return value of method, thought I must have the wrong syntax, resorted to checking google/Stack Overflow, then noticed the difference in rspec and solved.  Same issue relates to Question 5.
 
 # Question 4
 # Write code to retrieve the index of an element in the pet array.
 def find_index_of_array(value)
   pets = ['cat', 'dog']
-  # your answer here
+  pets.index(value)
 end
 
 
@@ -38,5 +39,6 @@ end
 # value.
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  # your answer here
+  friend[key] = value
+  friend
 end
