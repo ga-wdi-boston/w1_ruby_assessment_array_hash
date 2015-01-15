@@ -8,6 +8,7 @@
 # Don't modify the original array creation line.
 def append_to_array(value)
   pets = ['cat', 'dog']
+  pets << value
   # your answer here
 end
 
@@ -15,6 +16,7 @@ end
 # Write code to return the value of the passed-in key from the friend hash.
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
+  friend[key.to_sym]
   # your answer here
 end
 
@@ -22,6 +24,8 @@ end
 # Add a key and value to the friend hash.
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
+  friend[key] = value
+  return friend
   # your answer here
 end
 
@@ -29,6 +33,7 @@ end
 # Write code to retrieve the index of an element in the pet array.
 def find_index_of_array(value)
   pets = ['cat', 'dog']
+  pets.index(value)
   # your answer here
 end
 
@@ -38,5 +43,7 @@ end
 # value.
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
+  friend[key] = value
+  friend
   # your answer here
 end
