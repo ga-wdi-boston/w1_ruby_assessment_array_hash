@@ -38,5 +38,5 @@ end
 # value.
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  friend[key].update(value) #should have gotten this
+  friend[key].update!(value) #should have gotten this
 end
