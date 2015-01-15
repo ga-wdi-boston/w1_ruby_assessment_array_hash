@@ -27,6 +27,6 @@ end
 
 RSpec.describe 'change_value_of_key' do
   it 'changes the value of the key in the hash' do
-    expect(change_value_of_key(:favorite_food, 'sushi')).to eq({ name: "Chris", favorite_food: "sushi", age: 27, hair_color: 'blue' })
+    expect(change_value_of_key(:favorite_food, 'sushi')).to eq({ name: "Chris", favorite_food: "sushi", age: 27 })
   end
 end
