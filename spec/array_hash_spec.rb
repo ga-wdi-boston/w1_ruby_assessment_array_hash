@@ -23,7 +23,7 @@ RSpec.describe 'find_index_of_array' do
   it 'returns the index of the item in the array' do
     expect(find_index_of_array('dog')).to eq 1
   end
-end 
+end
 
 RSpec.describe 'change_value_of_key' do
   it 'changes the value of the key in the hash' do
