@@ -22,8 +22,8 @@ end
 # Add a key and value to the friend hash.
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  h = { key: value}
-  h.merge(friend)
+  friend[key] = value
+  friend
 end
 
 # Question 4
@@ -39,5 +39,6 @@ end
 # value.
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  friend.merge()
+  friend[key] = value
+  friend
 end
