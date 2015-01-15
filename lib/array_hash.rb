@@ -39,5 +39,6 @@ end
 # value.
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  friend = { name: "Chris", favorite_food: "sushi", age: 27 }
+  friend[:favorite_food] = "sushi"
+  return friend
 end
