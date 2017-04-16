@@ -9,6 +9,7 @@
 def append_to_array(value)
   pets = ['cat', 'dog']
   # your answer here
+  pets.push(value)
 end
 
 # Question 2
@@ -16,6 +17,7 @@ end
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[:age]
 end
 
 # Question 3
@@ -23,6 +25,8 @@ end
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[:hair_color] = "blue"
+  return friend
 end
 
 # Question 4
@@ -30,6 +34,7 @@ end
 def find_index_of_array(value)
   pets = ['cat', 'dog']
   # your answer here
+  pets.index('dog')
 end
 
 
@@ -39,4 +44,6 @@ end
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[:favorite_food] = "sushi"
+  return friend
 end
