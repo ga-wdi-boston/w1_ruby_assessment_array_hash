@@ -9,6 +9,7 @@
 def append_to_array(value)
   pets = ['cat', 'dog']
   # your answer here
+  pets <<'snake'
 end
 
 # Question 2
@@ -16,6 +17,8 @@ end
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key]
+
 end
 
 # Question 3
@@ -23,6 +26,9 @@ end
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key] = value
+  # looked up documentation for adding a key/value to a hash to do a sanity check when just "friend[:hair_color] = "blue" didn't pass the test. Then I realized I needed to write the variable "friend" after so it returns the new hash.
+  friend
 end
 
 # Question 4
@@ -30,6 +36,7 @@ end
 def find_index_of_array(value)
   pets = ['cat', 'dog']
   # your answer here
+  pets.index(value)
 end
 
 
@@ -39,4 +46,6 @@ end
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key] = value
+  friend
 end
