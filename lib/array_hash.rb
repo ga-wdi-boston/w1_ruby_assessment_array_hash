@@ -8,28 +8,31 @@
 # Don't modify the original array creation line.
 def append_to_array(value)
   pets = ['cat', 'dog']
-  # your answer here
+  pets.push(value)
 end
 
 # Question 2
 # Write code to return the value of the passed-in key from the friend hash.
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  # your answer here
+  friend[key]
+  #friend[key]
 end
 
 # Question 3
 # Add a key and value to the friend hash.
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  # your answer here
+  friend[key] = value
+  return friend
+  #friend[key]= value
 end
 
 # Question 4
 # Write code to retrieve the index of an element in the pet array.
 def find_index_of_array(value)
   pets = ['cat', 'dog']
-  # your answer here
+  pets.index(value)
 end
 
 
@@ -38,5 +41,6 @@ end
 # value.
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
-  # your answer here
+  friend[key] = value
+  return friend
 end
