@@ -9,13 +9,16 @@
 def append_to_array(value)
   pets = ['cat', 'dog']
   # your answer here
+  pets << value
 end
 
 # Question 2
 # Write code to return the value of the passed-in key from the friend hash.
+
 def get_key_value(key)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key.to_sym] #I did double check the key.to_sym formula from my homework.
 end
 
 # Question 3
@@ -23,6 +26,8 @@ end
 def add_key_value_pair(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key.to_sym] = value
+  friend
 end
 
 # Question 4
@@ -30,6 +35,7 @@ end
 def find_index_of_array(value)
   pets = ['cat', 'dog']
   # your answer here
+  pets.index(value)
 end
 
 
@@ -39,4 +45,6 @@ end
 def change_value_of_key(key,value)
   friend = { name: "Chris", favorite_food: "Pizza", age: 27 }
   # your answer here
+  friend[key.to_sym] = value
+  friend
 end
